@@ -16,8 +16,8 @@ int main()
         cout << "GetProcAddress failed" << endl;
         return 1;
     }
-    cout << "The value of myint is: " << ((int(*)())myfunction)() << endl;
-    myfunction();
+    cout << "The value of myint is: " << myfunction() << endl;
+    
     FreeLibrary(hinstance);
 
     return 0;
